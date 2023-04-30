@@ -3,7 +3,6 @@
     "next",
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
@@ -19,13 +18,6 @@
         "alphabetize": {
           "order": "asc"
         }
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 80,
-        "tabWidth": 2
       }
     ]
   }
