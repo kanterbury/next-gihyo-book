@@ -16,9 +16,6 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "all",
-        "endOfLine": "lf",
-        "singleQuote": true,
         "printWidth": 80,
         "tabWidth": 2
       }
