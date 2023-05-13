@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  compiler: () => {
+  compiler: (() => {
     let compilerConfig = {
       styledComponent: true,
     };
@@ -13,6 +13,14 @@ const nextConfig = {
       };
     }
     return compilerConfig;
+  })(),
+  async rewrites() {
+    return [
+      {
+        source: "/",
+        destination: `${process.env.API_BASE_URL}/:match*`,
+      },
+    ];
   },
 };
 
